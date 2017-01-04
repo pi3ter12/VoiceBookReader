@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Voice Book Reader</string>
+    <string name="action_folder">Folder</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="action_save">Save</string>
+    <string name="action_sort">Sort</string>
+    <string name="action_fileback">Back</string>
+
+    <string name="cd_repeat">Repeat one or all</string>
+    <string name="cd_previous">Skip backwards</string>
+    <string name="cd_play">Play and pause</string>
+    <string name="cd_next">Skip forwards</string>
+    <string name="chapter">Rozdział </string>
+    <string name="load_book">Wczytuje książkę</string>
+    <string name="refresh_library">Odświeżam bibliotekę</string>
+    <string name="please_wait">Proszę czekać...</string>
+    <string name="tts_error_message">Wystąpił błąd z TTS Google</string>
+    <string name="end">KONIEC</string>
+</resources>

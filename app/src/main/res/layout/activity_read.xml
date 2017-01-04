@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:id="@+id/activity_read_rl"
+    tools:context="voicebr.wiacekp.pl.voicebookreader.ReadActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_height="wrap_content"
+        android:id="@+id/activity_read_imageView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/activity_read_title"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/activity_read__author"
+        android:layout_below="@+id/activity_read_title"
+        android:layout_alignRight="@+id/activity_read_title"
+        android:layout_alignEnd="@+id/activity_read_title" />
+
+    <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:scaleType="fitXY"
+        android:background="?android:attr/selectableItemBackground"
+        android:id="@+id/activity_read_ib_play"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_play_circle_filled_black_48dp" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_height="50dp"
+        android:scaleType="fitXY"
+        android:id="@+id/activity_read_fforward"
+        android:layout_below="@+id/activity_read_ib_play"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/ic_fast_forward_black_24dp" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_height="50dp"
+        android:scaleType="fitXY"
+        android:id="@+id/activity_read_fbackward"
+        android:layout_alignBottom="@+id/activity_read_fforward"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/ic_fast_rewind_black_24dp" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_height="50dp"
+        android:scaleType="fitXY"
+        android:id="@+id/activity_read_backchapters"
+        android:layout_below="@+id/activity_read_ib_play"
+        android:layout_toRightOf="@+id/activity_read_fbackward"
+        android:layout_toEndOf="@+id/activity_read_fbackward"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/ic_skip_previous_black_24dp" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_height="50dp"
+        android:scaleType="fitXY"
+        android:id="@+id/activity_read_nextchapters"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/activity_read_ib_play"
+        android:layout_toLeftOf="@+id/activity_read_fforward"
+        android:layout_toStartOf="@+id/activity_read_fforward"
+        android:src="@drawable/ic_skip_next_black_24dp" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/activity_read_progressbar"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/activity_read_tvaboveprogressbar"
+        android:layout_above="@+id/activity_read_progressbar"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:scaleType="fitXY"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_exposure_plus_1_black_24dp"
+        android:id="@+id/activity_read_ib_plus_rate"
+        android:layout_below="@+id/activity_read__author"
+        android:layout_alignParentRight="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Prędkość : 10"
+        android:textSize="20sp"
+        android:id="@+id/activity_read_tv_rate"
+        android:layout_below="@+id/activity_read_ib_plus_rate"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:scaleType="fitXY"
+        android:layout_marginRight="20dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_exposure_neg_1_black_24dp"
+        android:id="@+id/activity_read_ib_minus_rate"
+        android:layout_below="@+id/activity_read__author"
+        android:layout_toLeftOf="@+id/activity_read_ib_plus_rate"
+        android:layout_toStartOf="@+id/activity_read_ib_plus_rate" />
+</RelativeLayout>

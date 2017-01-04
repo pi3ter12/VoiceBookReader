@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/item_books_list_view_imageview"
+        android:scaleType="fitCenter"
+        android:layout_width="80dp"
+
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_toRightOf="@id/item_books_list_view_imageview"
+        android:layout_marginLeft="15dp"
+        android:text="title"
+        android:id="@+id/item_books_list_view_title"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_toRightOf="@id/item_books_list_view_imageview"
+        android:layout_below="@id/item_books_list_view_title"
+        android:layout_marginLeft="15dp"
+        android:text="title"
+        android:id="@+id/item_books_list_view_author"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_below="@id/item_books_list_view_author"
+        android:text="20%"
+        android:id="@+id/item_books_list_view_procent"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_height="wrap_content" />
+
+
+    <ProgressBar
+        android:layout_below="@id/item_books_list_view_imageview"
+        android:id="@+id/item_books_list_view_progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="20dp"
+        android:indeterminate="false"
+        android:max="100"
+        android:minHeight="50dp"
+        android:minWidth="200dp"
+        android:progress="25" />
+</RelativeLayout>
